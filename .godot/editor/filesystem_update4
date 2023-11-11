@@ -1,2 +1,5 @@
 res://scenes/main_menu.tscn
 res://Scripts/main_menu.gd
+res://scenes/options_menu.tscn
+res://Scripts/options_menu.gd
+res://scenes/setting_tab_container.tscn

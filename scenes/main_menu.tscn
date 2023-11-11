@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccc0x06l8hay"]
+[gd_scene load_steps=6 format=3 uid="uid://ccc0x06l8hay"]
 
 [ext_resource type="Texture2D" uid="uid://6cimlfpuj4xr" path="res://asset/f364b7d0a49566891789d291b8b2e53f.jpg" id="1_2asi1"]
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_y5hmc"]
+[ext_resource type="PackedScene" uid="uid://dxpvcflyqsldu" path="res://scenes/options_menu.tscn" id="3_wkeul"]
 
 [sub_resource type="SystemFont" id="SystemFont_01bhx"]
 font_names = PackedStringArray("Impact")
@@ -73,7 +74,14 @@ custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_gvl73")
 theme_override_font_sizes/font_size = 24
-text = "Play Game"
+text = "Start Game"
+
+[node name="Option_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_gvl73")
+theme_override_font_sizes/font_size = 24
+text = "Options"
 
 [node name="Exit_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
@@ -81,3 +89,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_gvl73")
 theme_override_font_sizes/font_size = 24
 text = "Exit Game"
+
+[node name="Options_Menu" parent="." instance=ExtResource("3_wkeul")]
+visible = false
+layout_mode = 1
