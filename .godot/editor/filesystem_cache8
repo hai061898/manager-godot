@@ -1,9 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699699812
+::res://::1699839110
 icon.svg::CompressedTexture2D::5827813639403698700::1699685590::1699685595::1::::<><>::
 ::res://asset/::1699686032
 f364b7d0a49566891789d291b8b2e53f.jpg::CompressedTexture2D::2180490659945633723::1699686029::1699686032::1::::<><>::
-::res://scenes/::1699688269
-main_menu.tscn::PackedScene::144673769699006348::1699688269::0::1::::<><>::uid://6cimlfpuj4xr
-::res://Scripts/::1699699796
-main_menu.gd::GDScript::-1::1699699796::0::1::::MainMenu<>Control<>::
+::res://scenes/::1699702919
+main_menu.tscn::PackedScene::144673769699006348::1699702913::0::1::::<><>::uid://6cimlfpuj4xr::::res://asset/f364b7d0a49566891789d291b8b2e53f.jpg<>res://Scripts/main_menu.gd<>uid://dxpvcflyqsldu::::res://scenes/options_menu.tscn
+options_menu.tscn::PackedScene::8805850030223001334::1699702919::0::1::::<><>::res://Scripts/options_menu.gd<>uid://dfvo7r8jvj3eg::::res://scenes/setting_tab_container.tscn
+setting_tab_container.tscn::PackedScene::7554466329721273846::1699702913::0::1::::<><>::
+::res://Scripts/::1699701975
+main_menu.gd::GDScript::-1::1699701974::0::1::::MainMenu<>Control<>::
+options_menu.gd::GDScript::-1::1699701458::0::1::::OptionsMenu<>Control<>::

@@ -1,9 +1,12 @@
+Button
+VSeparator
 Label
+HBoxContainer
+HSeparator
 VBoxContainer
+ScrollContainer
 MarginContainer
 TabBar
 TabContainer
-Button
-HBoxContainer
 Control
 TextureRect
