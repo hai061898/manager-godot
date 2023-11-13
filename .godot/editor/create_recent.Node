@@ -1,10 +1,11 @@
-Button
+VBoxContainer
+ScrollContainer
+OptionButton
 VSeparator
 Label
 HBoxContainer
+Button
 HSeparator
-VBoxContainer
-ScrollContainer
 MarginContainer
 TabBar
 TabContainer

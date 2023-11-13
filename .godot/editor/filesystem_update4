@@ -1,5 +1,7 @@
+res://scenes/resolution_mode_button.tscn
+res://Scripts/resolution_mode_button.gd
 res://scenes/setting_tab_container.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
-res://scenes/hotkey_rebind_button.tscn
-res://Scripts/hotkey_rebind_button.gd
+res://scenes/window_mode_button.tscn
+res://scenes/options_display_button.tscn
