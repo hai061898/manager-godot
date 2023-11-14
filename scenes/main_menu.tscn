@@ -1,8 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccc0x06l8hay"]
+[gd_scene load_steps=11 format=3 uid="uid://ccc0x06l8hay"]
 
 [ext_resource type="Texture2D" uid="uid://6cimlfpuj4xr" path="res://asset/f364b7d0a49566891789d291b8b2e53f.jpg" id="1_2asi1"]
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_y5hmc"]
+[ext_resource type="Script" path="res://Scripts/ParallaxBackground.gd" id="2_7338d"]
+[ext_resource type="Texture2D" uid="uid://c8q4wal6i1m3a" path="res://asset/demo02_PixelSky_layer01.png" id="2_ghhqb"]
+[ext_resource type="Texture2D" uid="uid://cpnp0n5k51md4" path="res://asset/demo02_PixelSky_layer02.png" id="3_dtljy"]
 [ext_resource type="PackedScene" uid="uid://dxpvcflyqsldu" path="res://scenes/options_menu.tscn" id="3_wkeul"]
+[ext_resource type="Texture2D" uid="uid://cifp6xku832j7" path="res://asset/demo02_PixelSky_layer03.png" id="4_om4i8"]
+[ext_resource type="AudioStream" uid="uid://d0ln7cqpf8bdc" path="res://asset/CALL OF SILENT x AKUMA NA KO x AOT.mp3" id="8_3p1qk"]
 
 [sub_resource type="SystemFont" id="SystemFont_01bhx"]
 font_names = PackedStringArray("Impact")
@@ -18,6 +23,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_y5hmc")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
+script = ExtResource("2_7338d")
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+texture_filter = 1
+position = Vector2(579, 320)
+scale = Vector2(4.79167, 4.81481)
+texture = ExtResource("2_ghhqb")
+
+[node name="Cloud" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Cloud"]
+texture_filter = 1
+position = Vector2(580.5, 336.625)
+scale = Vector2(4.82083, 4.85)
+texture = ExtResource("3_dtljy")
+
+[node name="Cloud2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Cloud2"]
+texture_filter = 1
+position = Vector2(580.5, 336.625)
+scale = Vector2(4.82083, 4.85)
+texture = ExtResource("4_om4i8")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -93,3 +129,8 @@ text = "Exit Game"
 [node name="Options_Menu" parent="." instance=ExtResource("3_wkeul")]
 visible = false
 layout_mode = 1
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_3p1qk")
+volume_db = 0.984
+autoplay = true

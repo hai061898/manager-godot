@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgl8ypi44ojun"]
+
+[ext_resource type="Script" path="res://Scripts/Test_audio.gd" id="1_41nvi"]
+[ext_resource type="AudioStream" uid="uid://d0ln7cqpf8bdc" path="res://asset/CALL OF SILENT x AKUMA NA KO x AOT.mp3" id="2_xy7qt"]
+
+[node name="Test_audio" type="Node2D"]
+script = ExtResource("1_41nvi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_xy7qt")
+bus = &"SFX"

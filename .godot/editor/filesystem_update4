@@ -1,7 +1,10 @@
-res://scenes/resolution_mode_button.tscn
-res://Scripts/resolution_mode_button.gd
-res://scenes/setting_tab_container.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
+res://scenes/setting_tab_container.tscn
 res://scenes/window_mode_button.tscn
+res://scenes/resolution_mode_button.tscn
 res://scenes/options_display_button.tscn
+res://default_bus_layout.tres
+res://Scripts/Test_audio.gd
+res://scenes/audio_slider_settings.tscn
+res://Scripts/audio_slider_settings.gd
